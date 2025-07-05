@@ -1,0 +1,9 @@
+
+{% extends "base.html" %}
+{% block content %}
+<p>Welcome to your Expense Tracker Web App.</p>
+    <a href="{{ url_for('add_expense') }}" class="btn btn-primary">Add Expense</a>
+    <a href="{{ url_for('view_expenses') }}" class="btn btn-secondary">View Expenses</a>
+    <a href="{{ url_for('visualize', chart_type='pie') }}" class="btn btn-success">View Pie Chart</a>
+    <a href="{{ url_for('visualize', chart_type='bar') }}" class="btn btn-info">View Bar Chart</a>
+{% endblock %}
